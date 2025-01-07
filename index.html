@@ -1,15 +1,55 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width">
-        <title></title>
-        <link href="style.css" rel="stylesheet" type="text/css" />
-    </head>
-    <body>
-        <header></header>
-        <main></main>
-        <footer></footer>
-        <script src="script.js"></script>
-    </body>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calculator</title>
+    <link href="style.css" rel='stylesheet'/>
+  </head>
+  <body>
+    <main id="grid-layout">
+      <section id= "header">
+        <h1>The Ultimate Calculator</h1>
+      </section>
+      <section id='leftSide'>
+        <p>Updates</p>
+        <p>Contact Us</p>
+      </section>
+      <section id="main">
+        <div id="orderScreen"></div>
+        <div id="orderDisplay">
+          <p>Enter Your Numbers Here</p>
+        </div>
+        <div id="id-container">
+          <button class="'grid-item" onclick="addToNum('1')">1</button>
+          <button class="'grid-item" onclick="addToNum('2')">2</button>
+          <button class="'grid-item" onclick="addToNum('3')">3</button>
+          <button class="'grid-item" onclick="addToNum('4')">4</button>
+          <button class="'grid-item" onclick="addToNum('5')">5</button>
+          <button class="'grid-item" onclick="addToNum('6')">6</button>
+          <button class="'grid-item" onclick="addToNum('7')">7</button>
+          <button class="'grid-item" onclick="addToNum('8')">8</button>
+          <button class="'grid-item" onclick="addToNum('9')">9</button>
+          <button class="'grid-item" onclick="addToNum('0')">0</button>
+          <button class="'grid-item" onclick="operator('+')">+</button>
+          <button class="'grid-item" onclick="operator('-')">-</button>
+          <button class="'grid-item" onclick="operator('*')">*</button>
+          <button class="'grid-item" onclick="operator('/')">/</button>
+          
+        </div>
+        <button id="'submitButton" onclick="calculate()">=</button>
+        <button id="'submitButton" onclick="clr()">C</button>
+       </section>
+      <section id= "rightSide">
+        <p>How To Use The Calculator</p>
+        <p>FAQS</p>
+      </section>
+      <section id="footer">
+        <p>&copy; OCVTS comp sci 2024</p>
+      </section>
+    </main>
+     <script src="script.js"></script>
+  </body>
 </html>
+  
+  
