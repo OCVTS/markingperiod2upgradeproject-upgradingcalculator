@@ -57,7 +57,7 @@ function calculate() {
             orderDisplay.innerHTML = divide(num1, num2);
             break; 
             default:
-                orderDisplay.innerHTML = "ERROR";
+                orderDisplay.innerHTML = "Error, please add a symbol and another number, thank you.";
     }
 }
 // Helps with clearing the calculator. 
