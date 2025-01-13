@@ -16,7 +16,7 @@ function addToNum(num) {
 // orderDisplay.innerHTML = userInput;
 
 // }
-// This is will be used for user input. 
+// This will be used for user input. 
 function operator(op) {
     userOperator = op; 
     num1 = parseInt(userInput); 
@@ -65,3 +65,4 @@ function clr() {
     orderDisplay.innerHTML = 0;
     userInput = '';
 }
+
