@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -13,7 +14,9 @@
        <img src="Mult copy.png" width="100px" height="200px">
        
       </section>
-      <section id='leftSide'></section>
+      <section id='leftSide'>
+        <p id="facts"></p>
+      </section>
       <section id="main">
         
         <div id="orderScreen">
@@ -37,16 +40,28 @@
           <button class="'grid-item" onclick="operator('/')">/</button>
           <button id="'submitButton" onclick="calculate()">=</button>
         <button id="'submitButton" onclick="clr()">C</button>
+        <button id="'correct" onclick="correct()">Correct?</button>
         </div></div>
-        
+        <div>
+          <p id="q0"></p>
+          <button onclick="yes()">Around 1642</button> <button onclick="no()">2001</button> <button onclick="no()">1232</button> <button onclick="no()">1773</button>
+          <p id="q1"></p>
+          <button onclick="yes()">Slide</button> <button onclick="no()">Golden</button> <button onclick="no()">Number One</button> <button onclick="no()">Math</button>
+          <p id="q2"></p>
+         <button onclick="yes()">True</button> <button onclick="no()">False</button>
+         <p id="answer"></p>
+        </div>
+          
        </section>
+       
       <!-- <section id= "rightSide">
         <p>How To Use The Calculator</p>
         <p>FAQS</p> -->
       </section>
       
       <section id="footer">
-        <p>&copy; OCVTS comp sci 2024</p>
+        <p>Description:</p>
+        <p id="description"></p>
       </section>
     </main>
      <script src="script.js"></script>
